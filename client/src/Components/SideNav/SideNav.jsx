@@ -8,14 +8,16 @@ function SideNav() {
       <button className="ran-btn">
         Random Color
       </button>
-      <p className="quick-color">Red</p>
-      <p className="quick-color">Orange</p>
-      <p className="quick-color">Yellow</p>
-      <p className="quick-color">Green</p>
-      <p className="quick-color">Blue</p>
-      <p className="quick-color">Purple</p>
-      <p className="quick-color">Brown</p>
-      <p className="quick-color">Gray</p>
+      <div className="quick-color-container">
+        <p className="quick-color">Red</p>
+        <p className="quick-color">Orange</p>
+        <p className="quick-color">Yellow</p>
+        <p className="quick-color">Green</p>
+        <p className="quick-color">Blue</p>
+        <p className="quick-color">Purple</p>
+        <p className="quick-color">Brown</p>
+        <p className="quick-color">Gray</p>
+      </div>
     </div>
   );
 }
