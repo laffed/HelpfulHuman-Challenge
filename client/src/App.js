@@ -20,7 +20,7 @@ Review the design spec
 
   Option 2: 
   Each base color shows a page in main (pagination) of all hues within the base color range of hex colors
-  
+
 */
 
 function App() {
