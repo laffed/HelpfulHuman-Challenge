@@ -30,9 +30,8 @@ router.get('/api/colors/:page', (req, res, next) => {
 router.get('/api/random-color', (req, res, next) => {
   const index = Math.floor(Math.random() * 360);
   const ranColor = ranHexStringArr[index];
-  const huesArr = getHues(ranColor);
   return res.status(200).json({
-    data: huesArr
+    data: ranColor
   });
 });
 
