@@ -2,28 +2,29 @@
 const hexStringArr = require('../Data/colorData');
 
 function getHues(hexStr) {
-  const output = [hexStr];
+  const output = [];
   const index = hexStringArr.indexOf(hexStr);
-
+  console.log(index);
   // if the hexStr is not a color in the database, return without hues
   if (index === -1) {
+    output.push(hexStr);
     return output;
   }
 
   // hues only from right of hexStr in data arr
-  if (index < 2) {
-    for (let i = index; i < index + 4; i++) {
+  if (index < 20) {
+    for (let i = index; i <= index + 40; i += 10) {
       output.push(hexStringArr[i]);
     }
   }
 
   // hues only from left of hexStr in data arr
-  else if (index > 357) {
-    for (let i = index; i > index - 4; i--) {
+  else if (index > 339) {
+    for (let i = index; i >= index - 40; i -= 10) {
       output.push(hexStringArr[i]);
     }
   } else {
-    for (let i = index - 2; i <= index + 2; i++) {
+    for (let i = index - 20; i <= index + 20; i += 10) {
       output.push(hexStringArr[i]);
     }
   }
