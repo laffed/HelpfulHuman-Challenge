@@ -32,15 +32,12 @@ function SideNav() {
         Random Color
       </button>
       <div className="quick-color-container">
-        {/* TODO Find Hexcode for basic colors */}
         <QuickColor color='Red' hex='ff0000' />
-        <QuickColor color='Orange' hex='ff0000' />
-        <QuickColor color='Yellow' hex='ff0000' />
-        <QuickColor color='Green' hex='ff0000' />
-        <QuickColor color='Blue' hex='ff0000' />
-        <QuickColor color='Purple' hex='ff0000' />
-        <QuickColor color='Brown' hex='ff0000' />
-        <QuickColor color='Gray' hex='ff0000' />
+        <QuickColor color='Orange' hex='ff6600' />
+        <QuickColor color='Yellow' hex='ffea00' />
+        <QuickColor color='Green' hex='00ff00' />
+        <QuickColor color='Blue' hex='0000ff' />
+        <QuickColor color='Purple' hex='ff00ff' />
       </div>
     </div>
   );
