@@ -4,7 +4,6 @@ const hexStringArr = require('../Data/colorData');
 function getHues(hexStr) {
   const output = [];
   const index = hexStringArr.indexOf(hexStr);
-  console.log(index);
   // if the hexStr is not a color in the database, return without hues
   if (index === -1) {
     output.push(hexStr);

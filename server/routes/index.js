@@ -37,7 +37,6 @@ router.get('/api/random-color', (req, res, next) => {
 
 router.get('/api/color-detail/:hex', (req, res, next) => {
   const hex = req.params.hex;
-  console.log(hex);
   const huesArr = getHues(hex);
   return res.status(200).json({
     data: huesArr
