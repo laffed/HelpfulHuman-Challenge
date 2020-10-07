@@ -21,6 +21,10 @@ Review the design spec
   Option 2: 
   Each base color shows a page in main (pagination) of all hues within the base color range of hex colors
 
+
+TODO: 
+1. Paginiation UI on Main.jsx
+2. Detail.jsx styling
 */
 
 function App() {
