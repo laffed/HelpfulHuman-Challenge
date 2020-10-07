@@ -52,7 +52,7 @@ function Main() {
   return (
     <div className="main-wrapper">
       <div className="cards-container">
-        {pageData.map(str => <ColorCard hexCode={`#${str}`} />)}
+        {pageData.map(str => <ColorCard key={str} hexCode={`#${str}`} />)}
       </div>
     </div>
   );

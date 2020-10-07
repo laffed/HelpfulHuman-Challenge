@@ -1,7 +1,23 @@
 .detail-wrapper {
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
-  justify-content: center;
   padding: 40px 20px 20px 20px;
   border: 3px solid blue;
+  height: 100%;
+  align-items: stretch;
+}
+
+.big-card-container {
+  height: 60%;
+}
+
+.hues-row-container {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clear-btn-container {
+  height: 10%;
 }
