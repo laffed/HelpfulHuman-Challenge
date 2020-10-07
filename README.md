@@ -1,12 +1,26 @@
-# John K. 
+# Helpful Human Applicant Interview Challenge [John Kangsumrith]
 
-# Helpful Human Applicant Interview Challenge
+## Running Guide
 
-Welcome to Helpful Human's at home proficiency challenge! This challenge gauges your knowledge on a few different metrics that we use, in part, to evaluate your skills. In this repo, you will find the assets that are required to replicate the design that is also included in this repo. Both .sketch and .png assets are available.
+## - Areas for Improvement -
 
-To get started, clone this repo. Add your work to it in whatever structure you prefer, then push it to your own, renamed repo. When you are finished, follow the instructions at the end of this document.
+#### Color Spectrum Increase 
+Because the detail page required hue ranges for a chosen color, the initial color DB includes only 360 hexcode corresponding to the 360 degrees of hue. Saturation and Light were not modulated. 
 
-This challenge has different milestones.
+This creates limitations in the range of colors available to the user. The Random Color button only chooses from 360 data points instead of the full 16,777,216 number of possible hex color codes. 
+
+**Possible Solutions**
+-Eliminate the database altogether. 
+We do not need to store any of these hex values. They are predicatable and the data will never change. 
+Instead either the frontend will pass in HSL values or the backend will convert hexcodes to HSL values. Then the backend will generate an array of hues based on this HSL value and convert each HSL value back into its hexcode. The client will then receive this array of hexcodes just as before. 
+
+For the grid view, we could still generate a random set of 12 colors for each page, but these pages would not be able to maintain that state and there is the possibility for duplication. 
+
+Because pagination is required, a set number of data points is also requiredand therefore would require a database of at least some colors. 
+
+This could be overcome by maintaining a set of primary hex codes on the client and modulating saturation and light for these values within a certain range. This way, duplication would be very unlikely and we would remove the need for an api call altogether. 
+
+Because this is an example project, we wish to demonstrate the creation of a 'DB' and Restful endpoints, but in practice this application would work just as well as a purely frontend web app where all business logic is maintained on the client side. 
 
 ## Core
 Stated briefly, the core goal is to create a simple but functional app that has a data, view and logic layer. The app will display color swatches, and that's about it!
