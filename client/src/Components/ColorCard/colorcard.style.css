@@ -26,6 +26,10 @@
   border-radius: 10px;
 }
 
+.color-title-container {
+  padding-left: 1em;
+}
+
 .color-title-container .color-title {
   font-weight: bolder;
 }
