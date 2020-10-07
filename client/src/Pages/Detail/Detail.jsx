@@ -8,6 +8,7 @@ function Detail() {
   let location = useLocation();
   let pathArr = location.pathname.split('/');
   let hex = pathArr[pathArr.length - 1];
+  let hexStr = `#${hex}`;
   let history = useHistory();
 
   const [loading, setLoading] = useState(true);
@@ -57,7 +58,13 @@ function Detail() {
   return (
     <div className="detail-wrapper">
       <div className="big-card-container">
-        <ColorCard hexCode={`#${hex}`} />
+        <div className="big-card-color-box" style={{backgroundColor: hexStr}}>
+        </div>
+        <div className="big-card-title-container">
+          <p className="big-card-title">
+            {hexStr}
+          </p>
+        </div>
       </div>
       <div className="hues-row-container">
         {data.map(str => <ColorCard key={str} hexCode={`#${str}`} />)}
