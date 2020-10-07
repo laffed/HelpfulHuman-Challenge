@@ -17,7 +17,9 @@ function ColorCard(props) {
     <div className="color-card-wrapper" onClick={toColorDetail}>
       <div className="color-box" style={{backgroundColor: props.hexCode}}>
       </div>
-      <p className="color-title">{props.hexCode}</p>
+      <div className="color-title-container">
+        <p className="color-title">{props.hexCode}</p>
+      </div>
     </div>
   );
 }

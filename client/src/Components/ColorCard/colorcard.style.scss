@@ -8,6 +8,7 @@
   border: 1px #fdfdfd solid;
   border-radius: 10px;
   box-shadow: 3px 3px 3px 3px grey;
+  margin-right: 1em;
 }
 
 .color-box {
@@ -17,7 +18,9 @@
   border-radius: 10px;
 }
 
-.color-title {
-  font-weight: bolder;
-  margin-left: 10%;
+.color-title-container {
+
+  .color-title {
+    font-weight: bolder;
+  }
 }

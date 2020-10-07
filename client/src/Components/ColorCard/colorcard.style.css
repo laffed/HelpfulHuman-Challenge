@@ -16,6 +16,7 @@
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px 3px 3px grey;
           box-shadow: 3px 3px 3px 3px grey;
+  margin-right: 1em;
 }
 
 .color-box {
@@ -25,8 +26,7 @@
   border-radius: 10px;
 }
 
-.color-title {
+.color-title-container .color-title {
   font-weight: bolder;
-  margin-left: 10%;
 }
 /*# sourceMappingURL=colorcard.style.css.map */
