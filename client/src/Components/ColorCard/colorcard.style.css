@@ -1,0 +1,33 @@
+.color-card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 90%;
+  width: 80%;
+  max-width: 200px;
+  cursor: pointer;
+  border: 1px #fdfdfd solid;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 3px 3px grey;
+          box-shadow: 3px 3px 3px 3px grey;
+}
+
+.color-box {
+  height: 75%;
+  width: 100%;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.color-title {
+  font-weight: bolder;
+  margin-left: 10%;
+}
+/*# sourceMappingURL=colorcard.style.css.map */

@@ -1,0 +1,43 @@
+.sidenav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 200px;
+  padding: 40px 20px 20px 20px;
+  border: 1px red solid;
+}
+
+.ran-btn {
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px black solid;
+}
+
+.quick-color-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 10px;
+}
+
+.quick-color-container .quick-color {
+  margin: 8px 0 8px 0;
+  cursor: pointer;
+}
+/*# sourceMappingURL=sidenav.style.css.map */
