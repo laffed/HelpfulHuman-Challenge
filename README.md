@@ -1,8 +1,6 @@
 # Helpful Human Applicant Interview Challenge [John Kangsumrith]
 
-## Running Guide
-
-## - Areas for Improvement -
+# - Areas for Improvement -
 
 #### Color Spectrum Increase 
 Because the detail page required hue ranges for a chosen color, the initial color DB includes only 360 hexcode corresponding to the 360 degrees of hue. Saturation and Light were not modulated. 
@@ -22,10 +20,13 @@ This could be overcome by maintaining a set of primary hex codes on the client a
 
 Because this is an example project, we wish to demonstrate the creation of a 'DB' and Restful endpoints, but in practice this application would work just as well as a purely frontend web app where all business logic is maintained on the client side. 
 
-## Core
-Stated briefly, the core goal is to create a simple but functional app that has a data, view and logic layer. The app will display color swatches, and that's about it!
 
-The core goals should be completed in full. 
+#### Styling Improvements
+
+I wasn't able to get the exact styling dimensions from the sketch file and thus a lot of styling has been approximated. 
+
+
+
 
 ## Stretch
 The stretch goals can also be met if you choose to do so. Not completing the stretch goals does not disqualify you in any way nor will it lead to a disadvantage in comparison to other applicants.
