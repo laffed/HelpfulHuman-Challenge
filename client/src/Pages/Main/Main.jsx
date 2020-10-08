@@ -43,7 +43,7 @@ function Main() {
     } else if (e.target.getAttribute('name') === 'next') {
       if (+currPage < 30) {
         history.push({
-          pathname: `page/${currPage + 1}`
+          pathname: `/page/${currPage + 1}`
         });
       }
     } else {
