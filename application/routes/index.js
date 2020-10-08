@@ -3,10 +3,6 @@ const router = express.Router();
 const getHues = require('../helpers/getHues');
 const ranHexStringArr = require('../Data/ranColorData');
 
-router.get('/', (req, res, next) => {
-  console.log('ok');
-  res.send("Hello World");
-});
 
 router.get('/api/colors/:page', (req, res, next) => {
   let page = req.params.page;
